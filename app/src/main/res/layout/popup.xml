@@ -6,37 +6,42 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textSize="50dp"
+        android:id="@+id/popupTvGameOver"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.215" />
-
-
-    <Button
-        android:id="@+id/btnPlayGame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Play!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintVertical_bias="0.065" />
 
     <Button
-        android:id="@+id/btnGoToLeaderboard"
+        android:id="@+id/btnReturn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Leaderboard"
+        android:text="Return"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-        app:layout_constraintVertical_bias="0.612" />
+        app:layout_constraintTop_toBottomOf="@+id/popupTvGameOver"
+        app:layout_constraintVertical_bias="0.125" />
+
+    <Button
+        android:id="@+id/btnSaveResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Save Result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReturn"
+        app:layout_constraintVertical_bias="0.033" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

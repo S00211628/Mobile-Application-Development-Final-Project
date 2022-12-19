@@ -6,54 +6,86 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btnButtonTopRight"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/btnRight"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:background="@drawable/button_top_right"
+        android:rotation="45"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintHorizontal_bias="0.666"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnButtonTopLeft"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/btnTop"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:background="@drawable/button_top_left"
-        android:contentDescription="@string/app_name" />
+        android:contentDescription="@string/app_name"
+        android:rotation="45"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnBottomRight"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/btnBottom"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:background="@drawable/button_bottom_right"
+        android:rotation="45"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.695"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.877" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
 
-        android:id="@+id/btnBottomLeft"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:id="@+id/btnLeft"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:background="@drawable/button_bottom_left"
+        android:rotation="45"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.331"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnClickMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play!"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSequence"
+        app:layout_constraintTop_toTopOf="@+id/btnTop" />
+
+    <TextView
+        android:id="@+id/tvSequence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnBottomLeft"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.877" />
+        app:layout_constraintVertical_bias="0.499" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

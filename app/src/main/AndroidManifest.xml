@@ -29,6 +29,9 @@
 
         <activity android:name=".Game_Screen"
             android:screenOrientation="landscape"/>
+
+        <activity android:name=".HiScoreActivity"
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
